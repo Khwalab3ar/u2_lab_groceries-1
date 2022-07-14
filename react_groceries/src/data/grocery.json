@@ -1,0 +1,23 @@
+[
+  {
+    "item": "Banana",
+    "brand": "Dole",
+    "units": ".5 lbs",
+    "quantity": 5,
+    "isPurchased": true
+  },
+  {
+    "item": "Apples",
+    "brand": "",
+    "units": "5lbs",
+    "quantity": 5,
+    "isPurchased": false
+  },
+  {
+    "item": "Strawberries",
+    "brand": "Dole",
+    "units": "1lbs",
+    "quantity": 1,
+    "isPurchased": false
+  }
+]
