@@ -8,16 +8,30 @@
   },
   {
     "item": "Apples",
-    "brand": "",
+    "brand": "Local",
     "units": "5lbs",
     "quantity": 5,
-    "isPurchased": false
+    "isPurchased": true
   },
   {
     "item": "Strawberries",
     "brand": "Dole",
     "units": "1lbs",
     "quantity": 1,
-    "isPurchased": false
+    "isPurchased": true
+  },
+  {
+    "item": "Kisses",
+    "brand": "Hershey",
+    "units": "1 bar",
+    "quantity": 1,
+    "isPurchased": true
+  },
+  {
+    "item": "Double Shot Expresso",
+    "brand": "Starbucks",
+    "units": "12 cans",
+    "quantity": 1,
+    "isPurchased": true
   }
 ]

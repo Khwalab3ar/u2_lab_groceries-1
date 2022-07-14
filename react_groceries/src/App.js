@@ -11,10 +11,17 @@ function App() {
 
   const handleClick = (value, index) => {
     let oldList = foodList
+    let newId = '#list' + index.toString()
+    let li = document.querySelector(`${newId}`)
+    console.log(li)
     if (value === 'yes') {
+      li.style.backgroundColor = '#8a64aa'
+      li.style.opacity = '.5'
       oldList[index].isPurchased = false
     } else {
       oldList[index].isPurchased = true
+      li.style.backgroundColor = ''
+      li.style.opacity = '1'
     }
     setFoodList(oldList)
   }
@@ -38,6 +45,10 @@ function App() {
   return (
     <main>
       <h1>Grocery List</h1>
+      <div className="grocery-list">
+        <AddGrocery list={list} />
+      </div>
+      <h2>Do you need to buy this?</h2>
       <div className="container">
         <ListOfFood
           list={foodList}
@@ -46,7 +57,6 @@ function App() {
           clearList={clearList}
         />
       </div>
-      <AddGrocery list={list} />
     </main>
   )
 }

@@ -4,8 +4,9 @@ const AddGrocery = (props) => {
       <ul>
         {props.list.map((item => (
           <li>
-            <h4>Item: {item.item}</h4>
-            <p>Brand: {item.brand} Quantity: {item.quantity}</p>
+            <h4 class="g-list">{item.item}</h4>
+            <p class="g-list">Brand: {item.brand}</p>
+            <p class="g-list">Quantity: {item.quantity}</p>
           </li>
         )))}
       </ul>

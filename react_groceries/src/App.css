@@ -1,4 +1,9 @@
+*{
+  color: #523434;
+}
+
 body{
+  background-color: #92b5b1;
   width: 90%;
   text-align: center;
 }
@@ -6,12 +11,48 @@ main{
   margin: 0 auto;
 }
 li{
+  border-radius: 100px ;
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px dashed #523434;
+}
+img{
+  width:auto;
+  height:15vh;
+  margin-right: 3vh;
+  margin-left: -3vh;
+  
+}
+h1{
+  margin:5% auto 10% auto;
+  padding-bottom: 2%;
+  width: 50%;
+  font-size: 3em;
+  border-bottom:5px solid #523434;
+}
+h2{
+  border-radius: 40px;
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #c85454;
+  color: #fff;
+}
+h4{font-size: 1.5em;}
+p{
+  padding-top: 2%;
+}
+button:hover{
+  background-color: #c582f6;
+}
+button:visited{
+  background-color: #61dafb;
 }
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -47,12 +88,56 @@ li{
   }
 }
 
-.food{
-  width: 50%;
-  height: 500px;
-  overflow: scroll;
+.food , .grocery-list{
+  margin: 0 auto;
+  width: 80%;
 }
 
-.btn::after{
-  background-color: #61dafb;
+.list-of-food{  height: 500px;
+  overflow-y: scroll ;
+  scrollbar-width: none;
+  background-color: #b2cbff;
+  border-radius: 25%;
+}
+.list-of-food::-webkit-scrollbar{
+  overflow-y: scroll ;
+  scrollbar-width: none;
+}
+
+.f-list{
+  text-align: left;
+  width: 15vh;
+  padding-top: 6%;
+}
+.g-list{
+  margin: 2px auto;
+  text-align: center;
+}
+.y-n-btn{
+  text-align: center;
+  width: 100%;
+  padding-top: 6%;
+
+}
+.choice-btn{
+  margin:2% 10%;
+  width: 25%;
+  border-radius: 25px;
+  border:none;
+  background-color: #c85454;
+  color: #ffffff;
+  font-weight: 600;
+}
+.btn{
+  border: none;
+  border-radius: 25px;
+  margin: 5% 2%;
+  padding: 2%;
+  width: 25vh;
+  background-color: #b2cbff;
+}
+
+.grocery-list{
+  margin-bottom: 5%;
+  border-bottom:2px solid #523434;
 }
